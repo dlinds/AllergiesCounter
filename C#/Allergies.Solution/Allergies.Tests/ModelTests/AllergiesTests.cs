@@ -11,7 +11,13 @@ namespace Allergies.TestTools
     [TestMethod]
     public void AllergyChecker_AllergicToEggs_Eggs()
     {
-      Assert.AreEqual("eggs", testAllergy.AllergyCheck(1));
+      Assert.AreEqual("Egg", testAllergy.AllergyCheck(1));
+    }
+
+    [TestMethod]
+    public void AllergyChecker_AllergicToStrawberriesEggs_StrawberriesEggs()
+    {
+      Assert.AreEqual("Strawberries Egg ", testAllergy.AllergyCheck(9));
     }
   }
 }
