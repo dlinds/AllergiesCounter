@@ -19,12 +19,20 @@ namespace Allergies.TestTools
     {
       Assert.AreEqual("Strawberries, Egg", testAllergy.AllergyCheck(9));
     }
+
+    [TestMethod]
+    public void AllergyChecker_AllergicToAll_All()
+    {
+      Assert.AreEqual("Cats, Pollen, Chocolate, Tomatoes, Strawberries, Shellfish, Peanuts, Egg", testAllergy.AllergyCheck(255));
+    }
   }
 }
 
+// https://medium.com/@LindaVivah/learn-how-to-read-binary-in-5-minutes-dac1feb991e
 
-
-
+// 142.88.42.212
+// 255.255.255.255
+// ipconfig
 
 
 // 1      1    1     0   1  1  0  1  =237
@@ -45,6 +53,10 @@ namespace Allergies.TestTools
 // 9
 // 8  4  2  1
 // 1  0  0  1
+
+// 15
+// 16 8  4  2  1
+//  0 1  1  1  1
 
 
 // 1300

@@ -17,7 +17,6 @@ namespace Allergies
         {2, "Peanuts"},
         {1, "Egg"}
       };
-      //string output = String.Empty;
 
       List<string> outputList = new List<string> { };
       foreach (var allergen in listOfAllergens)
@@ -34,7 +33,3 @@ namespace Allergies
     }
   }
 }
-
-
-// List<string> names = new List<string>() { "John", "Anna", "Monica" };
-// var result = String.Join(", ", names.ToArray());
